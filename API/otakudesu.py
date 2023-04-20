@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-host = "https://otakudesu.pro/"
+host = "https://otakudesu.lol/"
 
 def getOngoing(next_page=1):
 	data = BeautifulSoup(requests.get(host + f"ongoing-anime/page/{next_page}/").text, features="html.parser")
